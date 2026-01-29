@@ -1175,3 +1175,93 @@ ul {
   transform: scale(1.1);
   box-shadow: 0 0 30px rgba(37, 211, 102, 0.9);
 }
+
+
+
+/* ===============================
+   PRODUCT DETAIL RESPONSIVE FIX
+   =============================== */
+
+.product-detail {
+  padding: 120px 0;
+}
+
+/* ===== Desktop ===== */
+.detail-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.detail-wrapper img {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.detail-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.detail-content p {
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.detail-features li {
+  margin-bottom: 8px;
+}
+
+.detail-content .btn {
+  margin-top: 20px;
+}
+
+/* ===== Tablet ===== */
+@media (max-width: 992px) {
+  .detail-wrapper {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .detail-content {
+    margin-top: 20px;
+  }
+
+  .detail-features {
+    display: inline-block;
+    text-align: left;
+  }
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 576px) {
+
+  .product-detail {
+    padding: 80px 15px;
+  }
+
+  .detail-wrapper img {
+    max-height: 300px;
+  }
+
+  .detail-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .detail-content p {
+    font-size: 0.95rem;
+  }
+
+  .detail-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .detail-content .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
